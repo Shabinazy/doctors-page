@@ -1,0 +1,186 @@
+<!-- Deklarasi tipe dokumen HTML5 -->
+<!DOCTYPE html>
+<!-- Elemen root HTML dengan bahasa Inggris -->
+<html lang="en">
+  <!-- Bagian head berisi metadata dan pengaturan halaman -->
+  <head>
+<!-- bagian head untuk dokumen website -->
+    <!-- Pengaturan karakter encoding UTF-8 untuk mendukung karakter internasional -->
+    <meta charset="UTF-8" />
+    <!-- Pengaturan viewport untuk responsif di perangkat mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Judul halaman yang muncul di tab browser -->
+    <title>WF Medical Center - Doctors</title>
+    <!-- Link ke file CSS eksternal untuk styling -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <!-- Bagian body berisi konten utama halaman -->
+  <body>
+    <!-- Container utama untuk seluruh halaman dokter -->
+    <div class="doctors">
+      <!-- BAGIAN HEADER: Berisi logo dan navigasi utama -->
+      <header class="header">
+        <!-- Logo medical center -->
+        <img src="image/logo.png" alt="Medical Center Logo" class="logo" />
+        <!-- Menu navigasi utama -->
+        <nav class="navigation">
+          <!-- Link menu navigasi -->
+          <a href="#" class="nav-link">HOME</a>
+          <a href="#" class="nav-link">ABOUT</a>
+          <a href="#" class="nav-link">DOCTORS</a>
+          <a href="#" class="nav-link">APPOINTMENT</a>
+          <!-- Tombol logout/keluar -->
+          <button class="logout-btn">Keluar</button>
+        </nav>
+      </header>
+
+      <!-- BAGIAN HERO: Banner utama dengan pesan promosi -->
+      <section class="hero">
+        <!-- Konten utama hero section -->
+        <div class="hero-content">
+          <!-- Judul utama hero -->
+          <h1 class="hero-title">MENGATASI</h1>
+          <!-- Sub judul hero -->
+          <h2 class="hero-subtitle">MASALAH KESEHATAN</h2>
+          <!-- Deskripsi layanan -->
+          <p class="hero-description">Konsultasi Dengan Dokter Ahli</p>
+          <!-- Container untuk tombol-tombol aksi -->
+          <div class="hero-buttons">
+            <!-- Tombol utama -->
+            <button class="btn-primary">DOKTER TERBAIK</button>
+            <!-- Tombol sekunder -->
+            <button class="btn-secondary">HUBUNGI</button>
+          </div>
+          <!-- Informasi kontak -->
+          <div class="hero-contact">
+            <p>WWW.WFmedicalcenter.com<br />@WFmedicalcenter</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BAGIAN DOKTER: Menampilkan daftar dokter spesialis -->
+      <section class="doctors-section">
+        <!-- Judul section dokter -->
+        <h2 class="section-title">DOKTER SPESIALIS TERBAIK KAMI</h2>
+        <!-- Grid container untuk kartu-kartu dokter -->
+        <div class="doctors-grid">
+          <!-- KARTU DOKTER 1: Dr. Wildaa -->
+          <div class="doctor-card">
+            <!-- Foto profil dokter -->
+            <img
+              src="image/doctor-wildaa.png"
+              alt="Dr. Wildaa"
+              class="doctor-photo"
+            />
+            <!-- Nama dokter -->
+            <h3 class="doctor-name">Wildaa</h3>
+            <!-- Spesialisasi dokter -->
+            <p class="doctor-specialty">Dokter SpesiAlis kulit</p>
+            <!-- Rating bintang dokter -->
+            <div class="rating">
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+            </div>
+          </div>
+
+          <!-- KARTU DOKTER 2: Dr. Shabina -->
+          <div class="doctor-card">
+            <!-- Foto profil dokter -->
+            <img
+              src="image/doctor-shabina.png"
+              alt="Dr. Shabina"
+              class="doctor-photo"
+            />
+            <!-- Nama dokter -->
+            <h3 class="doctor-name">Shabina</h3>
+            <!-- Spesialisasi dokter -->
+            <p class="doctor-specialty">Dokter SpesiAlis Anak</p>
+            <!-- Rating bintang dokter -->
+            <div class="rating">
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+            </div>
+          </div>
+
+          <!-- KARTU DOKTER 3: Dr. Mauliya -->
+          <div class="doctor-card">
+            <!-- Foto profil dokter -->
+            <img
+              src="image/doctor-mauliya.png"
+              alt="Dr. Mauliya"
+              class="doctor-photo"
+            />
+            <!-- Nama dokter -->
+            <h3 class="doctor-name">Mauliya</h3>
+            <!-- Spesialisasi dokter -->
+            <p class="doctor-specialty">Dokter SpesiAlis THT</p>
+            <!-- Rating bintang dokter -->
+            <div class="rating">
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+            </div>
+          </div>
+
+          <!-- KARTU DOKTER 4: Dr. Zaini -->
+          <div class="doctor-card">
+            <!-- Foto profil dokter -->
+            <img
+              src="image/doctor-zaini.png"
+              alt="Dr. Zaini"
+              class="doctor-photo"
+            />
+            <!-- Nama dokter -->
+            <h3 class="doctor-name">Zaini</h3>
+            <!-- Spesialisasi dokter -->
+            <p class="doctor-specialty">Dokter SpesiAlis Paru</p>
+            <!-- Rating bintang dokter -->
+            <div class="rating">
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+              <img src="image/star-icon-1.svg" alt="star" class="star" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BAGIAN REGISTRASI: Call-to-action untuk pendaftaran -->
+      <section class="registration">
+        <!-- Konten registrasi -->
+        <div class="registration-content">
+          <!-- Judul utama registrasi -->
+          <h2 class="registration-title">KAMI PEDULI PADA</h2>
+          <!-- Sub judul registrasi -->
+          <h3 class="registration-subtitle">KESEHATAN ANDA</h3>
+          <!-- Container tombol registrasi -->
+          <div class="registration-button">
+            <!-- Tombol untuk mendaftar cek kesehatan -->
+            <button class="register-btn">MENDAFTAR CEK KESEHATAN</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- BAGIAN FOOTER: Bagian bawah halaman -->
+      <footer class="footer">
+        <!-- Gambar background footer -->
+        <img
+          src="image/footer-background.png"
+          alt="Footer"
+          class="footer-image"
+        />
+      </footer>
+    </div>
+    <!-- Akhir container utama -->
+  </body>
+  <!-- Akhir dokumen HTML -->
+</html>

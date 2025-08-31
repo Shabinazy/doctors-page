@@ -1,0 +1,419 @@
+/* Reset CSS - Menghapus style default browser */
+* {
+  margin: 0; /* Hapus margin default */
+  padding: 0; /* Hapus padding default */
+  box-sizing: border-box; /* Ukuran elemen termasuk border dan padding */
+}
+
+/* Pengaturan dasar untuk seluruh halaman */
+body {
+  font-family: "Arial", sans-serif; /* Font utama */
+  line-height: 1.6; /* Jarak antar baris */
+  color: #333; /* Warna teks abu-abu gelap */
+}
+
+/* Container utama halaman dokter */
+.doctors {
+  width: 100%; /* Lebar penuh */
+  min-height: 100vh; /* Tinggi minimum satu layar */
+}
+
+/* !!! Header - Bagian atas halaman dengan navigasi */
+.header {
+  background: linear-gradient(135deg, #ff69b4, #ff1493); /* Gradient pink */
+  padding: 15px 50px; /* Ruang dalam */
+  display: flex; /* Layout horizontal */
+  justify-content: space-between; /* Logo kiri, menu kanan */
+  align-items: center; /* Rata tengah vertikal */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+/* Logo medical center */
+.logo {
+  height: 40px; /* Tinggi logo */
+  width: auto; /* Lebar otomatis */
+}
+
+/* Container menu navigasi */
+.navigation {
+  display: flex; /* Layout horizontal */
+  align-items: center; /* Rata tengah */
+  gap: 30px; /* Jarak antar item */
+}
+
+/* Link menu navigasi */
+.nav-link {
+  color: white; /* Warna putih */
+  text-decoration: none; /* Hilangkan garis bawah */
+  font-weight: 600; /* Tebal font */
+  font-size: 14px; /* Ukuran font */
+  letter-spacing: 0.5px; /* Jarak antar huruf */
+  transition: opacity 0.3s ease; /* Animasi halus */
+}
+
+/* Efek saat hover pada link */
+.nav-link:hover {
+  opacity: 0.8; /* Sedikit transparan */
+}
+
+/* Tombol logout */
+.logout-btn {
+  background: rgba(255, 255, 255, 0.2); /* Background transparan */
+  color: white; /* Teks putih */
+  border: 2px solid white; /* Border putih */
+  padding: 8px 20px; /* Ruang dalam tombol */
+  border-radius: 25px; /* Sudut melengkung */
+  font-weight: 600; /* Tebal font */
+  cursor: pointer; /* Kursor pointer */
+  transition: all 0.3s ease; /* Animasi halus */
+}
+
+/* Efek hover tombol logout */
+.logout-btn:hover {
+  background: white; /* Background putih */
+  color: #ff1493; /* Teks pink */
+}
+
+/* !!! Hero Section - Banner utama dengan informasi medical center */
+.hero {
+  background: linear-gradient(135deg, #8b5a96, #6b4c7a); /* Gradient ungu */
+  min-height: 500px; /* Tinggi minimum */
+  display: flex; /* Layout horizontal */
+  align-items: center; /* Rata tengah vertikal */
+  padding: 50px; /* Ruang dalam */
+  position: relative; /* Untuk background logo */
+  overflow: hidden; /* Sembunyikan overflow */
+}
+
+/* Background logo di sisi kanan */
+.hero::before {
+  content: ""; /* Elemen kosong */
+  position: absolute; /* Posisi absolut */
+  top: 0;
+  right: 0;
+  width: 50%; /* Setengah lebar */
+  height: 100%; /* Tinggi penuh */
+  background-image: url("image/logo.png"); /* Gambar logo */
+  background-size: contain; /* Ukuran sesuai container */
+  background-repeat: no-repeat; /* Tidak diulang */
+  background-position: center right; /* Posisi kanan */
+  opacity: 0.8; /* Sedikit transparan */
+}
+
+/* Container konten hero */
+.hero-content {
+  flex: 1; /* Fleksibel */
+  z-index: 2; /* Di atas background */
+  max-width: 50%; /* Maksimal setengah lebar */
+}
+
+/* Judul utama */
+.hero-title {
+  font-size: 48px; /* Ukuran besar */
+  font-weight: 900; /* Sangat tebal */
+  color: white; /* Warna putih */
+  margin-bottom: 10px; /* Jarak bawah */
+  letter-spacing: 2px; /* Jarak antar huruf */
+}
+
+/* Sub judul */
+.hero-subtitle {
+  font-size: 36px; /* Ukuran sedang */
+  font-weight: 700; /* Tebal */
+  color: white; /* Warna putih */
+  margin-bottom: 20px; /* Jarak bawah */
+  letter-spacing: 1px; /* Jarak antar huruf */
+}
+
+/* Deskripsi */
+.hero-description {
+  font-size: 18px; /* Ukuran normal */
+  color: rgba(255, 255, 255, 0.9); /* Putih transparan */
+  margin-bottom: 30px; /* Jarak bawah */
+  font-weight: 500; /* Medium */
+}
+
+/* Container tombol-tombol */
+.hero-buttons {
+  display: flex; /* Layout horizontal */
+  gap: 20px; /* Jarak antar tombol */
+  margin-bottom: 30px; /* Jarak bawah */
+}
+
+/* Tombol utama (primary) */
+.btn-primary {
+  background: #ff1493; /* Background pink */
+  color: white; /* Teks putih */
+  border: none; /* Tanpa border */
+  padding: 15px 30px; /* Ruang dalam */
+  border-radius: 30px; /* Sudut melengkung */
+  font-weight: 600; /* Tebal */
+  font-size: 14px; /* Ukuran font */
+  cursor: pointer; /* Kursor pointer */
+  transition: all 0.3s ease; /* Animasi halus */
+  letter-spacing: 0.5px; /* Jarak huruf */
+}
+
+/* Efek hover tombol primary */
+.btn-primary:hover {
+  background: #e6127a; /* Pink lebih gelap */
+  transform: translateY(-2px); /* Naik sedikit */
+}
+
+/* Tombol sekunder */
+.btn-secondary {
+  background: transparent; /* Background transparan */
+  color: white; /* Teks putih */
+  border: 2px solid white; /* Border putih */
+  padding: 13px 30px; /* Ruang dalam */
+  border-radius: 30px; /* Sudut melengkung */
+  font-weight: 600; /* Tebal */
+  font-size: 14px; /* Ukuran font */
+  cursor: pointer; /* Kursor pointer */
+  transition: all 0.3s ease; /* Animasi halus */
+  letter-spacing: 0.5px; /* Jarak huruf */
+}
+
+/* Efek hover tombol secondary */
+.btn-secondary:hover {
+  background: white; /* Background putih */
+  color: #8b5a96; /* Teks ungu */
+}
+
+/* Informasi kontak */
+.hero-contact {
+  color: rgba(255, 255, 255, 0.8); /* Putih transparan */
+  font-size: 12px; /* Ukuran kecil */
+  line-height: 1.4; /* Jarak antar baris */
+}
+
+/* !!! Doctors Section - Bagian daftar dokter spesialis */
+.doctors-section {
+  padding: 80px 50px; /* Ruang dalam besar */
+  background: #f8f9fa; /* Background abu-abu muda */
+  text-align: center; /* Teks rata tengah */
+}
+
+/* Judul section dokter */
+.section-title {
+  font-size: 32px; /* Ukuran besar */
+  font-weight: 800; /* Sangat tebal */
+  color: #333; /* Warna abu-abu gelap */
+  margin-bottom: 50px; /* Jarak bawah */
+  letter-spacing: 1px; /* Jarak antar huruf */
+}
+
+/* Grid layout untuk kartu dokter */
+.doctors-grid {
+  display: grid; /* Layout grid */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Kolom responsif */
+  gap: 40px; /* Jarak antar kartu */
+  max-width: 1200px; /* Lebar maksimal */
+  margin: 0 auto; /* Rata tengah */
+}
+
+/* Kartu individual dokter */
+.doctor-card {
+  background: white; /* Background putih */
+  border-radius: 20px; /* Sudut melengkung */
+  padding: 30px 20px; /* Ruang dalam */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi */
+  text-align: center; /* Teks rata tengah */
+}
+
+/* Efek hover pada kartu dokter */
+.doctor-card:hover {
+  transform: translateY(-10px); /* Naik ke atas */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); /* Bayangan lebih kuat */
+}
+
+/* Foto profil dokter */
+.doctor-photo {
+  width: 120px; /* Lebar foto */
+  height: 120px; /* Tinggi foto */
+  border-radius: 50%; /* Bentuk lingkaran */
+  object-fit: cover; /* Crop gambar */
+  margin-bottom: 20px; /* Jarak bawah */
+  border: 4px solid #ff1493; /* Border pink */
+}
+
+/* Nama dokter */
+.doctor-name {
+  font-size: 24px; /* Ukuran font */
+  font-weight: 700; /* Tebal */
+  color: #333; /* Warna abu-abu gelap */
+  margin-bottom: 10px; /* Jarak bawah */
+}
+
+/* Spesialisasi dokter */
+.doctor-specialty {
+  font-size: 16px; /* Ukuran font */
+  color: #666; /* Warna abu-abu medium */
+  margin-bottom: 15px; /* Jarak bawah */
+  font-weight: 500; /* Medium */
+}
+
+/* Container rating bintang */
+.rating {
+  display: flex; /* Layout horizontal */
+  justify-content: center; /* Rata tengah */
+  gap: 5px; /* Jarak antar bintang */
+}
+
+/* Icon bintang */
+.star {
+  width: 20px; /* Lebar bintang */
+  height: 20px; /* Tinggi bintang */
+}
+
+/* !!! Registration Section - Bagian ajakan untuk mendaftar */
+.registration {
+  background: linear-gradient(135deg, #ff69b4, #ff1493); /* Gradient pink */
+  padding: 80px 50px; /* Ruang dalam besar */
+  text-align: center; /* Teks rata tengah */
+  position: relative; /* Untuk background image */
+  overflow: hidden; /* Sembunyikan overflow */
+}
+
+/* Container konten registrasi */
+.registration-content {
+  position: relative; /* Posisi relatif */
+  z-index: 2; /* Di atas background */
+}
+
+/* Judul utama registrasi */
+.registration-title {
+  font-size: 36px; /* Ukuran besar */
+  font-weight: 800; /* Sangat tebal */
+  color: white; /* Warna putih */
+  margin-bottom: 10px; /* Jarak bawah */
+  letter-spacing: 1px; /* Jarak antar huruf */
+}
+
+/* Sub judul registrasi */
+.registration-subtitle {
+  font-size: 28px; /* Ukuran sedang */
+  font-weight: 700; /* Tebal */
+  color: white; /* Warna putih */
+  margin-bottom: 40px; /* Jarak bawah */
+  letter-spacing: 0.5px; /* Jarak antar huruf */
+}
+
+/* Tombol registrasi */
+.register-btn {
+  background: white; /* Background putih */
+  color: #ff1493; /* Teks pink */
+  border: none; /* Tanpa border */
+  padding: 20px 40px; /* Ruang dalam */
+  border-radius: 35px; /* Sudut melengkung */
+  font-weight: 700; /* Tebal */
+  font-size: 18px; /* Ukuran font */
+  cursor: pointer; /* Kursor pointer */
+  transition: all 0.3s ease; /* Animasi halus */
+  letter-spacing: 0.5px; /* Jarak huruf */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Bayangan */
+}
+
+/* Efek hover tombol registrasi */
+.register-btn:hover {
+  transform: translateY(-3px); /* Naik ke atas */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Bayangan lebih kuat */
+}
+
+/* Footer - Bagian bawah halaman */
+.footer {
+  background: #f8f9fa; /* Background abu-abu muda */
+  padding: 0; /* Tanpa padding */
+  text-align: center; /* Teks rata tengah */
+}
+
+/* !!! Gambar footer */
+.footer-image {
+  width: 100%; /* Lebar penuh */
+  height: auto; /* Tinggi otomatis */
+  display: block; /* Display block */
+}
+
+/* Responsive Design - Desain untuk perangkat mobile */
+@media (max-width: 768px) {
+  /* Header responsif untuk mobile */
+  .header {
+    padding: 15px 20px; /* Padding lebih kecil */
+    flex-direction: column; /* Layout vertikal */
+    gap: 20px; /* Jarak antar elemen */
+  }
+
+  /* Navigasi responsif */
+  .navigation {
+    gap: 15px; /* Jarak antar link lebih kecil */
+  }
+
+  /* Link navigasi lebih kecil di mobile */
+  .nav-link {
+    font-size: 12px; /* Ukuran font diperkecil */
+  }
+
+  /* Hero section responsif */
+  .hero {
+    flex-direction: column; /* Layout vertikal */
+    padding: 30px 20px; /* Padding lebih kecil */
+    text-align: center; /* Teks rata tengah */
+  }
+
+  /* Konten hero full width di mobile */
+  .hero-content {
+    max-width: 100%; /* Lebar penuh */
+    margin-bottom: 30px; /* Jarak bawah */
+  }
+
+  /* Judul hero lebih kecil di mobile */
+  .hero-title {
+    font-size: 36px; /* Ukuran diperkecil */
+  }
+
+  /* Sub judul hero lebih kecil di mobile */
+  .hero-subtitle {
+    font-size: 28px; /* Ukuran diperkecil */
+  }
+
+  /* Tombol hero vertikal di mobile */
+  .hero-buttons {
+    flex-direction: column; /* Layout vertikal */
+    align-items: center; /* Rata tengah */
+  }
+
+  /* Section dokter responsif */
+  .doctors-section {
+    padding: 50px 20px; /* Padding lebih kecil */
+  }
+
+  /* Judul section lebih kecil di mobile */
+  .section-title {
+    font-size: 24px; /* Ukuran diperkecil */
+  }
+
+  /* Grid dokter jadi 1 kolom di mobile */
+  .doctors-grid {
+    grid-template-columns: 1fr; /* Satu kolom saja */
+    gap: 30px; /* Jarak antar kartu */
+  }
+
+  /* Registration section responsif */
+  .registration {
+    padding: 50px 20px; /* Padding lebih kecil */
+  }
+
+  /* Judul registrasi lebih kecil di mobile */
+  .registration-title {
+    font-size: 28px; /* Ukuran diperkecil */
+  }
+
+  /* Sub judul registrasi lebih kecil di mobile */
+  .registration-subtitle {
+    font-size: 22px; /* Ukuran diperkecil */
+  }
+}
